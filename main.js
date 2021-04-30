@@ -1,35 +1,4 @@
-$(".slaider").show()
-$(".page2").show()
-$(".ooo").hide()
-$(".select").hide()
 
-
-
-$("#type1b").on("click", () => {
-    $(".revolution").hide()
-    $(".war").hide()
-    $(".drama").show()
-    
-    bkdrama()
-
-});
-
-
-$("#type2b").on("click", () => {
-    $(".revolution").show()
-    $(".war").hide()
-    $(".drama").hide()
-    bkrevolution()
-
-});
-
-$("#type3b").on("click", () => {
-    $(".revolution").hide()
-    $(".war").show()
-    $(".drama").hide()
-    bkwar()
-
-});
 
 const dramaBookName = ["A Streetcar Named Desire", "Hamlet","The Crucible"]
 const dramaBookyear = ["1947","1601","1953"]
@@ -42,23 +11,24 @@ const dramaBookWrittenBy = ["Elia Kazan","William Shakespeare","Tennessee Willia
 
 
 const bkdrama = ()=>{
-    $(".drama").show()
-    $(".drama").html("")
+    $(".type11").show()
+    $(".type11").html("")
 
     
     for (let i=0; i<dramaBookName.length;i++){
-    $(".drama").append(`<div class=dramaDiv id='dramaMovie${i}' ></div>`)
-    $("#drama"+i).append(`<div class=dramaDivCH1 ><img src='${dramaBookImj[i]}' alt='${dramaBookName[i]} photo'></div>`)
-    $("#drama"+i).append(`<div class=movieDivCH2 id='actionCH${i}' ></div>`)
-    $("#drama"+i).append(`<h1>${dramaBookName[i]}</h1>`)
-    $("#drama"+i).append(`<h2>${dramaBookyear[i]}</h2>`)
-    $("#drama"+i).append(`<h3>${dramaBookRating[i]}</h3>`)
-    $("#drama"+i).append(`<h4>${dramaBookWrittenBy[i]}</h4>`)
-    $("#drama"+i).append(`<p id='breafDrama${i}'>${dramaBookBref[i]}</p>`)
+    $(".type11").append(`<div class="dramaDiv" id='dramaMovie${i}' ></div>`)
+    $(".type11").append(`<div class="dramaDivCH1" ><img src='${dramaBookImj[i]}' alt='${dramaBookName[i]} photo'></div>`)
+    $(".type11").append(`<div class="movieDivCH2 "id='actionCH${i}' ></div>`)
+    $(".type11").append(`<h1> bookname :${dramaBookName[i]}</h1>`)
+    $(".type11").append(`<h2>book year :${dramaBookyear[i]}</h2>`)
+    $(".type11").append(`<h3>book rating :${dramaBookRating[i]}</h3>`)
+    $(".type11").append(`<h4>written by :${dramaBookWrittenBy[i]}</h4>`)
+    $(".type11").append(`<p id='breafDrama${i}'>${dramaBookBref[i]}</p>`)
     
 
 
     }
+
 }
 
 
@@ -72,19 +42,19 @@ const revolutionBookRating = ["5","4","4.5"]
 const revolutionBookWrittenBy = [" Crane Brinton","Eric Hobsbawm","socialist John Reed"]
 
 const bkrevolution = ()=>{
-    $(".revolution").show()
-    $(".revolution").html("")
+    $(".type12").show()
+    $(".type12").html("")
 
     
     for (let i=0; i<revolutionBookName.length;i++){
-    $(".revolution").append(`<div class=revolutionDiv id='revolutionMovie${i}' ></div>`)
-    $("#revolution"+i).append(`<div class=revolutionDivCH1 ><img src='${revolutionBookImj[i]}' alt='${revolutionBookName[i]} photo'></div>`)
-    $("#revolution"+i).append(`<div class=revolutionDivCH2 id='revolutionCH${i}' ></div>`)
-    $("#revolution"+i).append(`<h1>${revolutionBookName[i]}</h1>`)
-    $("#revolution"+i).append(`<h2>${revolutionBookyear[i]}</h2>`)
-    $("#revolution"+i).append(`<h3>${revolutionBookRating[i]}</h3>`)
-    $("#revolution"+i).append(`<h4>${revolutionBookWrittenBy[i]}</h4>`)
-    $("#revolution"+i).append(`<p id='breafrevolution${i}'>${revolutionBookBref[i]}</p>`)
+    $(".type12").append(`<div class="revolutionDiv" id='revolutionMovie${i}' ></div>`)
+    $(".type12").append(`<div class="revolutionDivCH1" ><img src='${revolutionBookImj[i]}' alt='${revolutionBookName[i]} photo'></div>`)
+    $(".type12").append(`<div class="revolutionDivCH2" id='revolutionCH${i}' ></div>`)
+    $(".type12").append(`<h1> book name :${revolutionBookName[i]}</h1>`)
+    $(".type12").append(`<h2> book year :${revolutionBookyear[i]}</h2>`)
+    $(".type12").append(`<h3> rating :${revolutionBookRating[i]}</h3>`)
+    $(".type12").append(`<h4> written by :${revolutionBookWrittenBy[i]}</h4>`)
+    $(".type12").append(`<p id='breafrevolution${i}'>${revolutionBookBref[i]}</p>`)
     
 
 
@@ -101,23 +71,69 @@ const warBookImj =["","photo/logo.png.png","photo/logo.png.png"]
 const warBookRating = ["5","4","4.5"]
 const warBookWrittenBy = [" General Carl Von Clausewitz","Vom Kriege"," Philip Caputo"]
 
-const bkrevolution = ()=>{
-    $(".war").show()
-    $(".war").html("")
+const bkwar = ()=>{
+    $(".type13").show()
+    $(".type13").html("")
 
     
     for (let i=0; i<warBookName.length;i++){
-    $(".war").append(`<div class=warDiv id='warbook${i}' ></div>`)
-    $("#war"+i).append(`<div class=warnDivCH1 ><img src='${revolutionBookImj[i]}' alt='${warBookName[i]} photo'></div>`)
-    $("#war"+i).append(`<div class=warDivCH2 id='warCH${i}' ></div>`)
-    $("#war"+i).append(`<h1>${warBookName[i]}</h1>`)
-    $("#war"+i).append(`<h2>${warBookyear[i]}</h2>`)
-    $("#war"+i).append(`<h3>${warBookRating[i]}</h3>`)
-    $("#war"+i).append(`<h4>${warBookWrittenBy[i]}</h4>`)
-    $("#war"+i).append(`<p id='breafwar${i}'>${warBookBref[i]}</p>`)
+    $(".type13").append(`<div class="warDiv" id='warbook${i}' ></div>`)
+    $(".type13").append(`<div class="warnDivCH1" ><img src='${revolutionBookImj[i]}' alt='${warBookName[i]} photo'></div>`)
+    $(".type13").append(`<div class="warDivCH2" id='warCH"${i}' ></div>`)
+    $(".type13").append(`<h1>book name : ${warBookName[i]}</h1>`)
+    $(".type13").append(`<h2> book year :${warBookyear[i]}</h2>`)
+    $(".type13").append(`<h3> book rating :${warBookRating[i]}</h3>`)
+    $(".type13").append(`<h4> written by :${warBookWrittenBy[i]}</h4>`)
+    $(".type13").append(`<p id='breafwar${i}'>${warBookBref[i]}</p>`)
     
 
 
     }
 }
 
+
+$("#type1b").on("click", () => {
+
+    $(".img11").hide()
+    $(".img22").hide()
+    $(".img33").hide()
+    $(".title2").hide()
+    $(".type12").hide()
+    $(".type13").hide()
+    $(".header").hide()
+    $(".type11").show()
+
+    bkdrama()
+
+});
+
+
+$("#type2b").on("click", () => {
+
+
+    $(".img11").hide()
+    $(".img22").hide()
+    $(".img33").hide()
+    $(".title2").hide()
+    $(".type11").hide()
+    $(".type13").hide()
+    $(".header").hide()
+    $(".type12").show()
+    bkrevolution()
+
+});
+
+$("#type3b").on("click", () => {
+    
+    
+    $(".img11").hide()
+    $(".img22").hide()
+    $(".img33").hide()
+    $(".title2").hide()
+    $(".type11").hide()
+    $(".type12").hide()
+    $(".header").hide()
+    $(".type13").show()
+    bkwar()
+
+});
