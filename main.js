@@ -1,6 +1,6 @@
 
 
-const dramaBookName = ["A Streetcar Named Desire", "Hamlet","The Crucible"]
+const dramaBookName = ["Streetcar Named Desire", "Hamlet","Crucible"]
 const dramaBookyear = ["1947","1601","1953"]
 const dramaBookBref=["After the loss of her family home to creditors, Blanche DuBois travels from the small town of Laurel, Mississippi, to the New Orleans French Quarter to live with her younger married sister, Stella, and Stella's husband, Stanley Kowalski. Blanche is in her thirties and, with no money, has nowhere else to go."
 ,"The protagonist of Hamlet is Prince Hamlet of Denmark, son of the recently deceased King Hamlet, and nephew of King Claudius, his father's brother and successor. Claudius hastily married King Hamlet's widow, Gertrude, Hamlet's mother, and took the throne for himself. Denmark has a long-standing feud with neighbouring Norway, in which King Hamlet slew King Fortinbras of Norway in a battle some years ago. Although Denmark defeated Norway and the Norwegian throne fell to King Fortinbras's infirm brother, Denmark fears that an invasion led by the dead Norwegian king's son, Prince Fortinbras, is imminent.",
@@ -8,6 +8,7 @@ const dramaBookBref=["After the loss of her family home to creditors, Blanche Du
 const dramaBookImj =["photo/logo.png.png","photo/logo.png.png","photo/logo.png.png"]
 const dramaBookRating = ["5","4","4.5"]
 const dramaBookWrittenBy = ["Elia Kazan","William Shakespeare","Tennessee Williams"]
+const dramaBookPrice = ["10.00 JD ","12.50 JD","6.00 JD"]
 
 
 const bkdrama = ()=>{
@@ -16,14 +17,15 @@ const bkdrama = ()=>{
 
     
     for (let i=0; i<dramaBookName.length;i++){
-    $(".type11").append(`<div class="dramaDiv" id='dramaMovie${i}' ></div>`)
+    $(".type11").append(`<div class="dramaDiv" id='dramabook${i}' ></div>`)
     $(".type11").append(`<div class="dramaDivCH1" ><img src='${dramaBookImj[i]}' alt='${dramaBookName[i]} photo'></div>`)
-    $(".type11").append(`<div class="movieDivCH2 "id='actionCH${i}' ></div>`)
-    $(".type11").append(`<h1> bookname :${dramaBookName[i]}</h1>`)
-    $(".type11").append(`<h2>book year :${dramaBookyear[i]}</h2>`)
-    $(".type11").append(`<h3>book rating :${dramaBookRating[i]}</h3>`)
-    $(".type11").append(`<h4>written by :${dramaBookWrittenBy[i]}</h4>`)
-    $(".type11").append(`<p id='breafDrama${i}'>${dramaBookBref[i]}</p>`)
+    $(".type11").append(`<div class="dramaDivCH2 "id='actionCH${i}' ></div>`)
+    $(".type11").append(`<h1 class="h111"> bookname : ${dramaBookName[i]}</h1>`)
+    $(".type11").append(`<h2>book year : ${dramaBookyear[i]}</h2>`)
+    $(".type11").append(`<h3>book rating : ${dramaBookRating[i]}</h3>`)
+    $(".type11").append(`<h3>book price : ${dramaBookPrice[i]}</h3>`)
+    $(".type11").append(`<h4>written by : ${dramaBookWrittenBy[i]}</h4>`)
+    $(".type11").append(`<p id='breafDrama${i}'> ${dramaBookBref[i]}</p>`)
     
 
 
@@ -40,6 +42,7 @@ const revolutionBookBref=["In contrast to the moderates, the radicals are aided 
 const revolutionBookImj =["photo/logo.png.png","photo/logo.png.png","photo/logo.png.png"]
 const revolutionBookRating = ["5","4","4.5"]
 const revolutionBookWrittenBy = [" Crane Brinton","Eric Hobsbawm","socialist John Reed"]
+const revolutionBookPrice = ["9.00 JD ","12.50 JD","3.00 JD"]
 
 const bkrevolution = ()=>{
     $(".type12").show()
@@ -47,13 +50,14 @@ const bkrevolution = ()=>{
 
     
     for (let i=0; i<revolutionBookName.length;i++){
-    $(".type12").append(`<div class="revolutionDiv" id='revolutionMovie${i}' ></div>`)
+    $(".type12").append(`<div class="revolutionDiv" id='revolutionbook${i}' ></div>`)
     $(".type12").append(`<div class="revolutionDivCH1" ><img src='${revolutionBookImj[i]}' alt='${revolutionBookName[i]} photo'></div>`)
     $(".type12").append(`<div class="revolutionDivCH2" id='revolutionCH${i}' ></div>`)
-    $(".type12").append(`<h1> book name :${revolutionBookName[i]}</h1>`)
-    $(".type12").append(`<h2> book year :${revolutionBookyear[i]}</h2>`)
-    $(".type12").append(`<h3> rating :${revolutionBookRating[i]}</h3>`)
-    $(".type12").append(`<h4> written by :${revolutionBookWrittenBy[i]}</h4>`)
+    $(".type12").append(`<h1 class="h111"> book name : ${revolutionBookName[i]}</h1>`)
+    $(".type12").append(`<h2> book year : ${revolutionBookyear[i]}</h2>`)
+    $(".type12").append(`<h3> rating : ${revolutionBookRating[i]}</h3>`)
+    $(".type12").append(`<h3> Book price : ${revolutionBookPrice[i]}</h3>`)
+    $(".type12").append(`<h4> written by : ${revolutionBookWrittenBy[i]}</h4>`)
     $(".type12").append(`<p id='breafrevolution${i}'>${revolutionBookBref[i]}</p>`)
     
 
@@ -70,6 +74,7 @@ const warBookBref=["On June 23, 1812, Napoleon's Grande Armée, over 500,000 men
 const warBookImj =["","photo/logo.png.png","photo/logo.png.png"]
 const warBookRating = ["5","4","4.5"]
 const warBookWrittenBy = [" General Carl Von Clausewitz","Vom Kriege"," Philip Caputo"]
+const warBookPrice = ["15.00 JD ","17.50 JD","8.00 JD"]
 
 const bkwar = ()=>{
     $(".type13").show()
@@ -80,10 +85,11 @@ const bkwar = ()=>{
     $(".type13").append(`<div class="warDiv" id='warbook${i}' ></div>`)
     $(".type13").append(`<div class="warnDivCH1" ><img src='${revolutionBookImj[i]}' alt='${warBookName[i]} photo'></div>`)
     $(".type13").append(`<div class="warDivCH2" id='warCH"${i}' ></div>`)
-    $(".type13").append(`<h1>book name : ${warBookName[i]}</h1>`)
-    $(".type13").append(`<h2> book year :${warBookyear[i]}</h2>`)
-    $(".type13").append(`<h3> book rating :${warBookRating[i]}</h3>`)
-    $(".type13").append(`<h4> written by :${warBookWrittenBy[i]}</h4>`)
+    $(".type13").append(`<h1 class="h111">book name : ${warBookName[i]}</h1>`)
+    $(".type13").append(`<h2> book year : ${warBookyear[i]}</h2>`)
+    $(".type13").append(`<h3> book rating : ${warBookRating[i]}</h3>`)
+    $(".type13").append(`<h3> book price : ${warBookPrice[i]}</h3>`)
+    $(".type13").append(`<h4> written by : ${warBookWrittenBy[i]}</h4>`)
     $(".type13").append(`<p id='breafwar${i}'>${warBookBref[i]}</p>`)
     
 
@@ -93,6 +99,7 @@ const bkwar = ()=>{
 
 
 $("#type1b").on("click", () => {
+
 
     $(".img11").hide()
     $(".img22").hide()
