@@ -158,20 +158,20 @@ $("#type3b").on("click", () => {
 });
 
 
-$("#type1b").on("click", () => {
+$("#pge").on("click", () => {
 
-    $(".img11").hide()
-    $(".img22").hide()
-    $(".img33").hide()
-    $(".title2").hide()
+    $(".header").show()
+    $(".categories").show()
+    $(".img11").show()
+    $(".img22").show()
+    $(".img33").show()
+    $(".title2").show()
     $(".type12").hide()
     $(".type13").hide()
-    $(".header").hide()
-    $(".type11").show()
-    $("#11").show()
+    $(".type11").hide()
+    $("#11").hide()
     $("#A22").hide()
     $("#A33").hide()
 
-    bkdrama()
 
 });
