@@ -8,7 +8,7 @@ body{
     font-family: 'Poppins', sans-serif;
 }
 
-.header{
+.header , .categories{
     background: radial-gradient(#fff,#ffd6d6);
 }
 
