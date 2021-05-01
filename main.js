@@ -20,7 +20,7 @@ const bkdrama = ()=>{
     $(".type11").append(`<div class="dramaDiv" id='dramabook${i}' ></div>`)
     $(".type11").append(`<div class="dramaDivCH1" ><img src='${dramaBookImj[i]}' alt='${dramaBookName[i]} photo'></div>`)
     $(".type11").append(`<div class="dramaDivCH2 "id='actionCH${i}' ></div>`)
-    $(".type11").append(`<h1 class="h111"> bookname : ${dramaBookName[i]}</h1>`)
+    $(".type11").append(`<h2 class="h111"> bookname : ${dramaBookName[i]}</h2>`)
     $(".type11").append(`<h2>book year : ${dramaBookyear[i]}</h2>`)
     $(".type11").append(`<h3>book rating : ${dramaBookRating[i]}</h3>`)
     $(".type11").append(`<h3>book price : ${dramaBookPrice[i]}</h3>`)
@@ -53,7 +53,7 @@ const bkrevolution = ()=>{
     $(".type12").append(`<div class="revolutionDiv" id='revolutionbook${i}' ></div>`)
     $(".type12").append(`<div class="revolutionDivCH1" ><img src='${revolutionBookImj[i]}' alt='${revolutionBookName[i]} photo'></div>`)
     $(".type12").append(`<div class="revolutionDivCH2" id='revolutionCH${i}' ></div>`)
-    $(".type12").append(`<h1 class="h111"> book name : ${revolutionBookName[i]}</h1>`)
+    $(".type12").append(`<h2 class="h111"> book name : ${revolutionBookName[i]}</h2>`)
     $(".type12").append(`<h2> book year : ${revolutionBookyear[i]}</h2>`)
     $(".type12").append(`<h3> rating : ${revolutionBookRating[i]}</h3>`)
     $(".type12").append(`<h3> Book price : ${revolutionBookPrice[i]}</h3>`)
@@ -85,7 +85,7 @@ const bkwar = ()=>{
     $(".type13").append(`<div class="warDiv" id='warbook${i}' ></div>`)
     $(".type13").append(`<div class="warnDivCH1" ><img src='${revolutionBookImj[i]}' alt='${warBookName[i]} photo'></div>`)
     $(".type13").append(`<div class="warDivCH2" id='warCH"${i}' ></div>`)
-    $(".type13").append(`<h1 class="h111">book name : ${warBookName[i]}</h1>`)
+    $(".type13").append(`<h2 class="h111">book name : ${warBookName[i]}</h2>`)
     $(".type13").append(`<h2> book year : ${warBookyear[i]}</h2>`)
     $(".type13").append(`<h3> book rating : ${warBookRating[i]}</h3>`)
     $(".type13").append(`<h3> book price : ${warBookPrice[i]}</h3>`)
@@ -99,7 +99,6 @@ const bkwar = ()=>{
 
 
 $("#type1b").on("click", () => {
-
 
     $(".img11").hide()
     $(".img22").hide()
@@ -131,7 +130,6 @@ $("#type2b").on("click", () => {
 });
 
 $("#type3b").on("click", () => {
-    
     
     $(".img11").hide()
     $(".img22").hide()
