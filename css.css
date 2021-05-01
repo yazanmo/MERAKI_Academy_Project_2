@@ -103,14 +103,14 @@ p{
 
 }
 
-.type11, .type12, .type13 {
+.type11, .type12, .type13 ,.hme{
 
     text-align: center;
     margin: auto;
     margin-top: 5%;
 }
 
-#type1b,#type2b,#type3b{
+#type1b,#type2b,#type3b,#pge{
     display: inline-block;
     background: #ff523b;
     color: white;

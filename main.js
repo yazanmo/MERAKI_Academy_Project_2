@@ -71,7 +71,7 @@ const warBookyear = ["1979 ","1980","2000"]
 const warBookBref=["On June 23, 1812, Napoleon's Grande Armée, over 500,000 men strong, poured over the Russian border. An equally massive Russian army faced them. The ensuing campaign was a catastrophe for Napoleon. Although the battle of Borodino, which resulted in heavy losses on both sides, allowed Napoleon to enter Moscow, his stay in that empty and decimated city was disastrous. "
 ,"Clausewitz was among those intrigued by the manner in which the leaders of the French Revolution, especially Napoleon, changed the conduct of war through their ability to motivate the populace and gain access to the full resources of the state, thus unleashing war on a greater scale than had previously been seen in Europe.",
 "In the foreword, Caputo makes clear that this is not a history book, nor is it a historical accusation; it is a story about war, based on his experience."]
-const warBookImj =["","photo/logo.png.png","photo/logo.png.png"]
+const warBookImj =["https://images-na.ssl-images-amazon.com/images/I/51mgJ2d4zfL._AC_UL600_SR381,600_.jpg","photo/logo.png.png","photo/logo.png.png"]
 const warBookRating = ["5","4","4.5"]
 const warBookWrittenBy = [" General Carl Von Clausewitz","Vom Kriege"," Philip Caputo"]
 const warBookPrice = ["15.00 JD ","17.50 JD","8.00 JD"]
@@ -92,6 +92,8 @@ const bkwar = ()=>{
     $(".type13").append(`<h4> written by : ${warBookWrittenBy[i]}</h4>`)
     $(".type13").append(`<p id='breafwar${i}'>${warBookBref[i]}</p>`)
     
+      
+    
 
 
     }
@@ -108,6 +110,9 @@ $("#type1b").on("click", () => {
     $(".type13").hide()
     $(".header").hide()
     $(".type11").show()
+    $("#11").show()
+    $("#A22").hide()
+    $("#A33").hide()
 
     bkdrama()
 
@@ -125,6 +130,11 @@ $("#type2b").on("click", () => {
     $(".type13").hide()
     $(".header").hide()
     $(".type12").show()
+    $("#A11").hide()
+    $("#A33").hide()
+    $("#A22").show()
+    
+
     bkrevolution()
 
 });
@@ -139,6 +149,29 @@ $("#type3b").on("click", () => {
     $(".type12").hide()
     $(".header").hide()
     $(".type13").show()
+    $("#A11").hide()
+    $("#22").hide()
+    $("#A33").show()
+
     bkwar()
+
+});
+
+
+$("#type1b").on("click", () => {
+
+    $(".img11").hide()
+    $(".img22").hide()
+    $(".img33").hide()
+    $(".title2").hide()
+    $(".type12").hide()
+    $(".type13").hide()
+    $(".header").hide()
+    $(".type11").show()
+    $("#11").show()
+    $("#A22").hide()
+    $("#A33").hide()
+
+    bkdrama()
 
 });
