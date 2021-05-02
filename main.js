@@ -102,7 +102,6 @@ $("#type1b").on("click", () => {
     $(".title2").hide()
     $(".type12").hide()
     $(".type13").hide()
-    $(".header").hide()
     $(".type11").show()
     $("#11").show()
     $("#A22").hide()
@@ -122,7 +121,6 @@ $("#type2b").on("click", () => {
     $(".title2").hide()
     $(".type11").hide()
     $(".type13").hide()
-    $(".header").hide()
     $(".type12").show()
     $("#A11").hide()
     $("#A33").hide()
@@ -141,31 +139,12 @@ $("#type3b").on("click", () => {
     $(".title2").hide()
     $(".type11").hide()
     $(".type12").hide()
-    $(".header").hide()
     $(".type13").show()
     $("#A11").hide()
     $("#22").hide()
     $("#A33").show()
-
+   
     bkwar()
 
 });
 
-
-$("#pge").on("click", () => {
-
-    $(".header").show()
-    $(".categories").show()
-    $(".img11").show()
-    $(".img22").show()
-    $(".img33").show()
-    $(".small-container").show()
-    $(".row").show()
-    $(".col-3").show()
-    $(".title2").show()
-    $(".type12").hide()
-    $(".type13").hide()
-    $(".type11").hide()
-
-
-});
