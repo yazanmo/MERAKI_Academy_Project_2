@@ -8,6 +8,8 @@ body{
     font-family: 'Poppins', sans-serif;
 }
 
+
+
 .header , .categories{
     background: radial-gradient(#fff,#ffd6d6);
 }
@@ -108,6 +110,7 @@ p{
     text-align: center;
     margin: auto;
     margin-top: 5%;
+    cursor: pointer;
 }
 
 #type1b,#type2b,#type3b,#pge{
@@ -134,7 +137,48 @@ p{
     color: #ff523b;
 }
 
-.dramaimg{
+.icon-bar {
+   margin-left: 40%;
+   background: radial-gradient(#fff,#ffd6d6);
 
-    border-radius: 50%;
-}
+    
+  }
+  
+
+  .icon-bar a {
+    float: center;
+    text-align: center;
+    padding: 0 16px 0 16px;
+    transition: all 0.3s ease;
+    color: white;
+    font-size: 30px;
+  }
+  
+  .icon-bar a:hover {
+    background-color: #000;
+  }
+  
+  .facebook {
+    background: #3B5998;
+    color: white;
+  }
+  
+  .twitter {
+    background: #55ACEE;
+    color: white;
+  }
+  
+  .google {
+    background: #dd4b39;
+    color: white;
+  }
+  
+  .linkedin {
+    background: #007bb5;
+    color: white;
+  }
+  
+  .youtube {
+    background: #bb0000;
+    color: white;
+  }

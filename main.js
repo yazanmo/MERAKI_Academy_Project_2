@@ -116,6 +116,7 @@ $("#type1b").on("click", () => {
     $("#A22").hide()
     $("#A33").hide()
     $(".navbar").show()
+
     bkdrama()
 
 });
