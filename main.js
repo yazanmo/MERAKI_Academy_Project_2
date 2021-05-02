@@ -21,13 +21,14 @@ const bkdrama = ()=>{
 
     
     for (let i=0; i<dramaBookName.length;i++){
-    $(".type11").append(`<div class="dramaimg" ><img src='${dramaBookImj[i]}' alt='${dramaBookName[i]} photo'></div>`)
+    $(".type11").append(`<div  ><img src='${dramaBookImj[i]}' alt='${dramaBookName[i]} photo'></div>`)
     $(".type11").append(`<h2 class="h111"> bookname : ${dramaBookName[i]}</h2>`)
     $(".type11").append(`<h2>Publishing Year : ${dramaBookyear[i]}</h2>`)
     $(".type11").append(`<h3>book rating : ${dramaBookRating[i]}</h3>`)
     $(".type11").append(`<h3>book price : ${dramaBookPrice[i]}</h3>`)
     $(".type11").append(`<h4> author : ${dramaBookWrittenBy[i]}</h4>`)
     $(".type11").append(`<p id='breafDrama${i}'> ${dramaBookBref[i]}</p>`)
+    $(".type11").append(` <div class="add"><button id="add1">add to chart</button></div>`)
     
 
 
