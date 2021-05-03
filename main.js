@@ -32,7 +32,7 @@ const bkdrama = ()=>{
     $(".type11").append(`<h3>book price : ${dramaBookPrice[i]}</h3>`)
     $(".type11").append(`<h4> author : ${dramaBookWrittenBy[i]}</h4>`)
     $(".type11").append(`<p id='breafDrama${i}'> ${dramaBookBref[i]}</p>`)
-    $(".type11").append(` <div class="add"><button id="add1">add to chart</button></div>`)
+    $(".type11").append(` <div class="add"><button id="addchr">add to favorite</button></div>`)
     
 
 
@@ -68,59 +68,28 @@ const bkrevolution = ()=>{
     $(".type12").append(`<h3> Book price : ${revolutionBookPrice[i]}</h3>`)
     $(".type12").append(`<h4> author : ${revolutionBookWrittenBy[i]}</h4>`)
     $(".type12").append(`<p id='breafrevolution${i}'>${revolutionBookBref[i]}</p>`)
+    $(".type12").append(` <div class="add1"><button id="add">add to favorite</button></div>`)
     
 
 
     }
 }
-
-
-const warBookName = ["The campaign of 1812 in Russia", "On War","A Rumor of War","WAR junger"]
-const warBookyear = ["1979 ","1980","2000", "2005"]
-const warBookBref=["On June 23, 1812, Napoleon's Grande Armée, over 500,000 men strong, poured over the Russian border. An equally massive Russian army faced them. The ensuing campaign was a catastrophe for Napoleon. Although the battle of Borodino, which resulted in heavy losses on both sides, allowed Napoleon to enter Moscow, his stay in that empty and decimated city was disastrous. "
-,"Clausewitz was among those intrigued by the manner in which the leaders of the French Revolution, especially Napoleon, changed the conduct of war through their ability to motivate the populace and gain access to the full resources of the state, thus unleashing war on a greater scale than had previously been seen in Europe.",
-"In the foreword, Caputo makes clear that this is not a history book, nor is it a historical accusation; it is a story about war, based on his experience.",
-"Now, Junger turns his brilliant and empathetic eye to the reality of combat--the fear, the honor, and the trust among men in an extreme situation whose survival depends on their absolute commitment to one another. His on-the-ground account follows a single platoon through a 15-month tour of duty in the most dangerous outpost in Afghanistan's Korengal Valley. Through the experiences of these young men at war, he shows what it means to fight, to serve, and to face down mortal danger on a daily basis."]
-const warBookImj =["https://i.pinimg.com/originals/ad/d2/ac/add2acd0628a481bfdef08604246f163.jpg","photo/logo.png.png","photo/logo.png.png","photo/logo.png.png"]
-const warBookRating = ["5","4","4.5","5"]
-const warBookWrittenBy = [" General Carl Von Clausewitz","Vom Kriege"," Philip Caputo","sebastian jnger"]
-const warBookPrice = ["15.00 JD ","17.50 JD","8.00 JD","7.50 JD"]
-
-const bkwar = ()=>{
-    $(".type13").show()
-    $(".type13").html("")
-
-    
-    for (let i=0; i<warBookName.length;i++){
-    $(".type13").append(`<div class="warimg" ><img src='${revolutionBookImj[i]}' alt='${warBookName[i]} photo'></div>`)
-    $(".type13").append(`<h2 class="h111">book name : ${warBookName[i]}</h2>`)
-    $(".type13").append(`<h2> Publishing Year : ${warBookyear[i]}</h2>`)
-    $(".type13").append(`<h3> book rating : ${warBookRating[i]}</h3>`)
-    $(".type13").append(`<h3> book price : ${warBookPrice[i]}</h3>`)
-    $(".type13").append(`<h4> author : ${warBookWrittenBy[i]}</h4>`)
-    $(".type13").append(`<p id='breafwar${i}'>${warBookBref[i]}</p>`)
-    
-      
-    
-
-
-    }
-}
-
 
 $("#type1b").on("click", () => {
 
     $(".img11").hide()
     $(".img22").hide()
-    $(".img33").hide()
+ 
     $(".title2").hide()
     $(".type12").hide()
-    $(".type13").hide()
+   
     $(".type11").show()
     $("#A11").show()
     $("#A22").hide()
-    $("#A33").hide()
+   
     $(".navbar").show()
+    $(".page3").hide()
+
 
     bkdrama()
 
@@ -132,50 +101,46 @@ $("#type2b").on("click", () => {
 
     $(".img11").hide()
     $(".img22").hide()
-    $(".img33").hide()
+  
     $(".title2").hide()
     $(".type11").hide()
-    $(".type13").hide()
+    
     $(".type12").show()
     $("#A11").hide()
-    $("#A33").hide()
+  
     $("#A22").show()
+    $(".page3").hide()
     
 
     bkrevolution()
 
 });
 
-$("#type3b").on("click", () => {
-    
-    $(".img11").hide()
-    $(".img22").hide()
-    $(".img33").hide()
-    $(".title2").hide()
-    $(".type11").hide()
-    $(".type12").hide()
-    $(".type13").show()
-    $("#A11").hide()
-    $("#22").hide()
-    $("#A33").show()
-   
-    bkwar()
 
-});
 
 const cnct = () => {
 
    $('.page3').append('<div class="contact"></div>') 
    $('.contact').append('<h1> book store </h1>')
-   $('.contact').append('<p> The exhibition was established in 2000. We specialize in the best offers and the lowest prices for selling cars  </p>')
+   $('.contact').append('<h2> We specialize in the best offers and the lowest prices for selling Book  </h2>')
    $('.contact').append('<p>Email:yazanmo@gmail.com </p>')
+   $('.contact').append('<p>phone number : 0787099537 </p>')
+  
+
    $('.page3').hide()
    
-   $("#contact").on("click", () => {
-       $(".categories").hide()
-       $(".header").hide()
-       $('.page3').show()
    
-       cnct()
-   });
+   
 }
+$("#contact").on("click", () => {
+    $(".categories").hide()
+    $(".row").hide()
+    
+    
+    cnct()
+    $('.page3').show()
+   
+});
+
+
+

@@ -110,7 +110,6 @@ p{
 
     margin: auto;
     margin-top: 5%;
-    cursor: pointer;
 }
 
 #type1b,#type2b,#type3b,#pge{
@@ -174,15 +173,15 @@ p{
     color: white;
   }
 
-  .add{
+  .add,.add1{
     text-align: center;
     margin: auto;
     margin-top: 5%;
-    cursor: pointer;
+    
 
   }
 
-  #add1{
+  #addchr,#add{
 
     display: inline-block;
     background: #ff523b;
@@ -192,3 +191,13 @@ p{
     border-radius: 30px;
 
   }
+
+  .page3{ 
+    
+      text-align: center;
+      background: radial-gradient(#fff,#ffd6d6);
+
+  }
+
+
+  
