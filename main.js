@@ -143,4 +143,17 @@ $("#contact").on("click", () => {
 });
 
 
+$(document).on('click','.user,.already-account',() =>{
+    $('.form').addClass('login-active').removeClass('sign-up-active')
+});
+
+$(document).on('click','.sign-up-btn',() =>{
+    $('.form').addClass('sign-up-active').removeClass('login-active')
+});
+
+$(document).on('click','.form-cancel',() =>{
+    $('.form').removeClass('login-active').removeClass('sign-up-active')
+});
+
+
 
