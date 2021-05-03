@@ -22,6 +22,7 @@ body{
 }
 
 nav{
+    cursor: pointer;
     flex: 1;
     text-align: right;
 
@@ -107,7 +108,6 @@ p{
 
 .type11, .type12, .type13 ,.hme{
 
-    text-align: center;
     margin: auto;
     margin-top: 5%;
     cursor: pointer;
@@ -168,15 +168,6 @@ p{
     color: white;
   }
   
-  .google {
-    background: #dd4b39;
-    color: white;
-  }
-  
-  .linkedin {
-    background: #007bb5;
-    color: white;
-  }
   
   .youtube {
     background: #bb0000;

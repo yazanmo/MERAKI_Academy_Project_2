@@ -1,4 +1,8 @@
 
+$('#home').on("click" , ()=>{
+    location.reload()
+
+})
 
 const dramaBookName = ["Streetcar Named Desire", "Hamlet","Crucible","Macbeth"]
 const dramaBookyear = ["1947","1601","1953","1995"]
@@ -159,3 +163,19 @@ $("#type3b").on("click", () => {
 
 });
 
+const cnct = () => {
+
+   $('.page3').append('<div class="contact"></div>') 
+   $('.contact').append('<h1> book store </h1>')
+   $('.contact').append('<p> The exhibition was established in 2000. We specialize in the best offers and the lowest prices for selling cars  </p>')
+   $('.contact').append('<p>Email:yazanmo@gmail.com </p>')
+   $('.page3').hide()
+   
+   $("#contact").on("click", () => {
+       $(".categories").hide()
+       $(".header").hide()
+       $('.page3').show()
+   
+       cnct()
+   });
+}
