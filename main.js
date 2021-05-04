@@ -32,8 +32,8 @@ const bkdrama = ()=>{
     $(".type11").append(`<h3>book price : ${dramaBookPrice[i]}</h3>`)
     $(".type11").append(`<h4> author : ${dramaBookWrittenBy[i]}</h4>`)
     $(".type11").append(`<p id='breafDrama${i}'> ${dramaBookBref[i]}</p>`)
-    $(".type11").append(` <div class="add"><button id="addchr">add to favorite</button></div>`)
-    
+    $(".type11").append(` <div class="add"><button id="addchr">buy this book</button></div>`)
+   
 
 
     }
@@ -68,7 +68,7 @@ const bkrevolution = ()=>{
     $(".type12").append(`<h3> Book price : ${revolutionBookPrice[i]}</h3>`)
     $(".type12").append(`<h4> author : ${revolutionBookWrittenBy[i]}</h4>`)
     $(".type12").append(`<p id='breafrevolution${i}'>${revolutionBookBref[i]}</p>`)
-    $(".type12").append(` <div class="add1"><button id="add">add to favorite</button></div>`)
+    $(".type12").append(` <div class="add1"><button id="add">buy this book</button></div>`)
     
 
 
@@ -122,9 +122,9 @@ const cnct = () => {
 
    $('.page3').append('<div class="contact"></div>') 
    $('.contact').append('<h1> book store </h1>')
-   $('.contact').append('<h2> We specialize in the best offers and the lowest prices for selling Book  </h2>')
+   $('.contact').append('<h2> You will find the books you want at the lowest prices and the best copies </h2>')
    $('.contact').append('<p>Email:yazanmo@gmail.com </p>')
-   $('.contact').append('<p>phone number : 0787099537 </p>')
+   $('.contact').append('<p>phone number : 123456789 </p>')
   
 
    $('.page3').hide()
